@@ -1,6 +1,6 @@
 {
   "name": "react-antd-async-search-select",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "基于react antd(暂时：2.x) select 封装的搜索下拉框",
   "main": "lib/index.js",
   "devDependencies": {

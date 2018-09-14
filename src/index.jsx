@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import T from "prop-types";
-import { Select, message, Icon } from "antd";
+import { Select, message, Spin } from "antd";
 const Option = Select.Option;
 
 export default class AsyncSelect extends Component {
@@ -39,7 +39,7 @@ export default class AsyncSelect extends Component {
     placeholder: "请选择",
     isPage: false,
     allowClear: true,
-    spinner: <Icon type="loading" />
+    spinner: <Spin size="small" />
   };
 
   componentDidMount() {
@@ -215,7 +215,7 @@ export default class AsyncSelect extends Component {
     if (loading) {
       others.notFoundContent = spinner;
     } else {
-      others.notFoundContent = <span>&nbsp;</span>;
+      others.notFoundContent = null;
     }
 
     others.style = others.style || {};
